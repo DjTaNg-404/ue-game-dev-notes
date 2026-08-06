@@ -19,16 +19,16 @@
 
 ## 目录
 
-- [UE4 C++ 基础](./UE4_C++基础.md) —— 当前唯一笔记，覆盖：引擎总览、宏与反射、UObject 对象模型、CDO、基类指针与多态、运算符（`::` / `.` / `->`）、类定义与继承、命名规范与各类型前缀（F/U/A/S/T/I/C/E/b 等）、结构体实战
+- [UE4 C++ 基础](./UE4_C++基础.md) —— 当前唯一笔记，按「工程基础 → 蓝图与 C++ → 类型与对象模型 → 常用类型 → 内存管理与持久化 → 模块体系 → C++ 语法要点 → 命名规范 → 实战」组织，覆盖：引擎总览、工程核心文件（.uproject/.h/.cpp/.Build.cs/.generated.h）、#include 路径规则、蓝图定位与分工、宏与反射系统、UObject 对象模型、CDO、基类指针与多态、字符串三兄弟（FString/FName/FText）、UE 容器（TArray/TMap/TSet）、指针与智能指针（TSharedPtr/TUniquePtr/TWeakPtr）、GC、序列化、模块拆分（Agent Harness 类比）、运算符（`::` / `.` / `->`）、类定义与继承、命名规范与各类型前缀（F/U/A/S/T/I/C/E/b 等）、结构体实战
 
 ## 路线图
 
-整体按 7 个阶段推进（当前处于阶段 1）：
+整体按 7 个阶段推进（当前已完成阶段 0-2，准备进入阶段 3）：
 
-0. 思维预热：理解「游戏是持续仿真」
-1. **类型与内存**：UObject/GC、反射宏、命名规范 ← 当前
-2. 容器与指针：TArray/TMap、智能指针
-3. Gameplay 框架：GameMode → Controller → Pawn → Component
+0. 思维预热：理解「游戏是持续仿真」✅
+1. **类型与内存**：UObject/GC、反射宏、命名规范 ✅
+2. **容器与指针**：TArray/TMap、智能指针 ✅
+3. Gameplay 框架：GameMode → Controller → Pawn → Component ← 下一步
 4. 构建与模块：UBT、.Build.cs
 5. 生命周期 & 蓝图：BeginPlay/Tick、C++ 暴露给蓝图
 6. 实战 + 进阶：委托、定时器、网络复制
